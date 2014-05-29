@@ -26,6 +26,8 @@ import jp.t2v.lab.play2.auth.AuthConfig
 import jp.t2v.lab.play2.auth.AuthElement
 import jp.t2v.lab.play2.auth.LoginLogout
 import jp.t2v.lab.play2.auth.OptionalAuthElement
+import jp.t2v.lab.play2.stackc.{RequestWithAttributes, RequestAttributeKey,     StackableController}
+
 
 /**
  * trait for the authorization and authentication of salon user.
@@ -35,10 +37,10 @@ import jp.t2v.lab.play2.auth.OptionalAuthElement
  */
 trait BaseAuthConfig extends AuthConfig {}
 
-trait BaseAuthElement extends AuthElement {}
+/*
+trait BaseAuthElement extends AuthElement with AuthConfig {}
 
-trait BaseLoginLogout extends LoginLogout {}
+trait BaseLoginLogout extends LoginLogout with AuthConfig {}
 
-trait BaseOptionalAuthElement extends OptionalAuthElement {}
-
-
+trait BaseOptionalAuthElement extends OptionalAuthElement with AuthConfig {}
+*/
